@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ pathto('_static/css/custom.css?', 1) }}">
+    <link rel="stylesheet" href="{{ pathto('_static/css/normalize.css', 1) }}">
+</head>
+<body>
+<div class="container">
+    <header role="banner">
+        <nav role="navigation">
+            <ul>
+                <li><a>主页</a></li>
+                <li><a>生活</a></li>
+                <li><a>技术</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        {% block body %}{% endblock %}
+    </main>
+    <aside>
+        <nav role="navigation">
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </aside>
+    <footer role="contentinfo"></footer>
+</div>
+</body>
+</html>
